@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <!--android:background="@drawable/tr_pink_round_rect"-->
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/metFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Full Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textCursorDrawable="@drawable/cursor_drawble"
+                    android:textSize="@dimen/text_16s"
+                    app:met_baseColor="@color/clrBtnPink"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/clrStatusbar"
+                    app:met_hideUnderline="false"
+                    app:met_primaryColor="@color/clrBtnPink"
+                    app:met_textColorHint="@color/clrBtnPink">
+                </com.rengwuxian.materialedittext.MaterialEditText>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <!--android:background="@drawable/tr_pink_round_rect"-->
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/metAddressOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Address Line 1"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textCursorDrawable="@drawable/cursor_drawble"
+                    android:textSize="@dimen/text_16s"
+                    app:met_baseColor="@color/clrBtnPink"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/clrStatusbar"
+                    app:met_hideUnderline="false"
+                    app:met_primaryColor="@color/clrBtnPink"
+                    app:met_textColorHint="@color/clrBtnPink">
+                </com.rengwuxian.materialedittext.MaterialEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <!--android:background="@drawable/tr_pink_round_rect"-->
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/metAddressTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Address Line 2"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textCursorDrawable="@drawable/cursor_drawble"
+                    android:textSize="@dimen/text_16s"
+                    app:met_baseColor="@color/clrBtnPink"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/clrStatusbar"
+                    app:met_hideUnderline="false"
+                    app:met_primaryColor="@color/clrBtnPink"
+                    app:met_textColorHint="@color/clrBtnPink">
+                </com.rengwuxian.materialedittext.MaterialEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <!--android:background="@drawable/tr_pink_round_rect"-->
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/metPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Pincode"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textCursorDrawable="@drawable/cursor_drawble"
+                    android:textSize="@dimen/text_16s"
+                    app:met_baseColor="@color/clrBtnPink"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/clrStatusbar"
+                    app:met_hideUnderline="false"
+                    app:met_primaryColor="@color/clrBtnPink"
+                    app:met_textColorHint="@color/clrBtnPink">
+                </com.rengwuxian.materialedittext.MaterialEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <!--android:background="@drawable/tr_pink_round_rect"-->
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/metCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="City"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textCursorDrawable="@drawable/cursor_drawble"
+                    android:textSize="@dimen/text_16s"
+                    app:met_baseColor="@color/clrBtnPink"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/clrStatusbar"
+                    app:met_hideUnderline="false"
+                    app:met_primaryColor="@color/clrBtnPink"
+                    app:met_textColorHint="@color/clrBtnPink">
+                </com.rengwuxian.materialedittext.MaterialEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <!--android:background="@drawable/tr_pink_round_rect"-->
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/metState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="State"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textCursorDrawable="@drawable/cursor_drawble"
+                    android:textSize="@dimen/text_16s"
+                    app:met_baseColor="@color/clrBtnPink"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/clrStatusbar"
+                    app:met_hideUnderline="false"
+                    app:met_primaryColor="@color/clrBtnPink"
+                    app:met_textColorHint="@color/clrBtnPink">
+                </com.rengwuxian.materialedittext.MaterialEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <!--android:background="@drawable/tr_pink_round_rect"-->
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/metCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Country"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textCursorDrawable="@drawable/cursor_drawble"
+                    android:textSize="@dimen/text_16s"
+                    app:met_baseColor="@color/clrBtnPink"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/clrStatusbar"
+                    app:met_hideUnderline="false"
+                    app:met_primaryColor="@color/clrBtnPink"
+                    app:met_textColorHint="@color/clrBtnPink">
+                </com.rengwuxian.materialedittext.MaterialEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp">
+
+                <TextView
+                    android:id="@+id/tvAddAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pink_btn_ripple"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="5dp"
+                    android:text="Add Address"
+                    android:textColor="@color/clrWhite"
+                    android:textSize="@dimen/text_18s"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

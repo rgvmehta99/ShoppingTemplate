@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="300dp"
+              android:layout_height="190dp"
+              android:background="@drawable/drawer_header_bg"
+              android:gravity="left"
+              android:orientation="vertical"
+              >
+    <!--android:theme="@style/ThemeOverlay.AppCompat.Dark"-->
+    <!--android:background="@color/clrYellow"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--@dimen/nav_header_height-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llUserPhotoBase"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/white_round"
+            android:layout_centerInParent="true">
+
+            <com.util.CircularImageView
+                android:id="@+id/ivUserPhotoBase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_ph"/>
+
+
+        </LinearLayout>
+
+        <!--<com.util.CircularImageView-->
+            <!--android:id="@+id/ivUserPhotoBase"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:padding="5dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/profile_ph"/>-->
+
+        <TextView
+            android:id="@+id/tvUsernameBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="Rox Morphy"
+            android:layout_below="@+id/llUserPhotoBase"
+            android:textColor="@color/clrBtnPink"
+            android:textSize="@dimen/text_18s"/>
+
+        <TextView
+        android:id="@+id/tvUseremailBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:layout_below="@+id/tvUsernameBase"
+        android:text="roxmorphy22@gmail.com"
+        android:textColor="@color/clrBtnPink"
+        android:textSize="@dimen/text_12s"/>
+
+
+    </RelativeLayout>
+
+
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="95dp"-->
+        <!--android:layout_height="95dp">-->
+
+        <!--<com.util.CircularImageView-->
+            <!--android:id="@+id/ivUserPhotoBase"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="@drawable/img_user_shadow"-->
+            <!--android:padding="5dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/profile_ph"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/ivNotificationBase"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:background="@drawable/white_btn_ripple"-->
+            <!--android:padding="15dp"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:src="@mipmap/ic_launcher"-->
+            <!--android:visibility="gone"/>-->
+    <!--</FrameLayout>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvUsernameBase"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="Rox Morphy"-->
+        <!--android:textColor="@color/clrBlack"-->
+        <!--android:textSize="@dimen/text_18s"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvUseremailBase"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="roxmorphy22@gmail.com"-->
+        <!--android:textColor="@color/trBlack40"-->
+        <!--android:textSize="@dimen/text_12s"/>-->
+
+
+</LinearLayout>

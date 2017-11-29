@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/clrWhite">
+
+        <ImageView
+            android:id="@+id/ivParentSideMenuIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:tint="@color/clrStatusbar"/>
+
+        <TextView
+            android:id="@+id/tvParentCateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivParentSideMenuIcon"
+            android:textColor="@color/clrStatusbar"
+            android:textSize="@dimen/text_16s"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+
+        <ImageView
+            android:id="@+id/ivSideMenuPlusIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_add"
+            android:layout_centerVertical="true"
+            android:tint="@color/clrStatusbar"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

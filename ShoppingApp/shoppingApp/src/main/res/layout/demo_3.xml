@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llMainTypeThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10sp"
+        android:background="@color/clrBgPink">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tvDiscountTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivDiscountTagCircularImage"
+                android:maxLines="2"
+                android:paddingBottom="10sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="10sp"
+                android:paddingTop="10sp"
+                android:text="Discount Items"
+                android:textColor="@color/clrBtnPinkDark"
+                android:textSize="@dimen/text_20s"/>
+
+            <com.util.CircularImageView
+                android:id="@+id/ivDiscountTagCircularImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="10sp"
+                android:src="@drawable/banner1"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

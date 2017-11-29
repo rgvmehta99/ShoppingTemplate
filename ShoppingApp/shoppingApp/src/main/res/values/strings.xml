@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShoppingMaterial</string>
+
+    <!--common messages-->
+    <string name="strNetError">We can\'t detect an internet connection. please check and try again.</string>
+    <string name="strServerError">We can\'t detect an internet connection. please check and try again.</string>
+    <string name="strSomethingWentwrong">Oops, something went wrong. Please try again later.</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nsView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220sp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="220sp"
+                        android:clipToPadding="false"
+                        android:visibility="visible"
+                        android:background="@drawable/gradiant_one"/>
+                    <!--android:background="@drawable/gradiant_one"-->
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/clr_d_detail_wht"
+                        app:ci_animator="@anim/indicator_animator"
+                        app:ci_animator_reverse="@anim/indicator_animator_reverse"
+                        app:ci_drawable="@drawable/pink_sqr_pager_indicator"
+                        app:ci_height="4sp"
+                        app:ci_margin="6sp"
+                        app:ci_width="10sp"/>
+
+                </RelativeLayout>
+
+
+
+
+                <com.util.shimmer_recycler_view.ShimmerRecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:shimmer_demo_child_count="10"
+                    app:shimmer_demo_layout="@layout/shimmer_preload_layout"
+                    app:shimmer_demo_shimmer_color="#73ffffff"/>
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+    <!--<com.util.shimmer_recycler_view.ShimmerRecyclerView-->
+        <!--android:id="@+id/recyclerView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:shimmer_demo_child_count="10"-->
+        <!--app:shimmer_demo_layout="@layout/shimmer_preload_layout"-->
+        <!--app:shimmer_demo_shimmer_color="#73ffffff"/>-->
+
+
+    <!--
+        No Data Layout
+    -->
+    <RelativeLayout
+        android:id="@+id/rlNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_home"/>
+
+        <TextView
+            android:id="@+id/tvNoData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivNoData"
+            android:gravity="center"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:text="@string/strNetError"
+            android:textColor="@color/clrBtnPink"
+            android:textSize="@dimen/text_16s"/>
+    </RelativeLayout>
+
+</RelativeLayout>

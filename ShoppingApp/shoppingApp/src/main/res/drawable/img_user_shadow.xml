@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/clrGray"/>
+            <!--shadow Color-->
+        </shape>
+    </item>
+
+    <item
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp"
+        android:bottom="3dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/clrWhite"/><!--//Background Color-->
+        </shape>
+    </item>
+</layer-list>
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--<item>-->
+        <!--<shape android:shape="oval">-->
+            <!--<padding android:bottom="10dp"-->
+                     <!--android:left="2dp"-->
+                     <!--android:right="10dp"-->
+                     <!--android:top="2dp"/>-->
+            <!--<solid android:color="@color/clr_d_time"/>-->
+            <!--&lt;!&ndash;shadow Color&ndash;&gt;-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!--<item-->
+        <!--android:left="0dp"-->
+        <!--android:right="0dp"-->
+        <!--android:top="0dp"-->
+        <!--android:bottom="0dp">-->
+
+        <!--<shape android:shape="oval">-->
+         <!--<padding android:bottom="2dp"-->
+                  <!--android:left="2dp"-->
+                  <!--android:right="2dp"-->
+                  <!--android:top="2dp"/>-->
+            <!--<solid android:color="@color/clrGray"/>//Background Color-->
+            <!--&lt;!&ndash;<solid android:color="@color/clrGray"/>//Background Color&ndash;&gt;-->
+        <!--</shape>-->
+    <!--</item>-->
+<!--</layer-list>-->

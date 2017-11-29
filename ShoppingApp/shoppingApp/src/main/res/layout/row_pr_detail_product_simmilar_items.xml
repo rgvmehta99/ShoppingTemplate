@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="190sp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp">
+        <!--android:background="@drawable/pink_btn_round_rect_border"-->
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ivImage"
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:layout_width="160sp"
+            android:layout_height="180sp"
+            android:layout_gravity="center"
+            fresco:actualImageScaleType="fitXY"
+            fresco:fadeDuration="300"
+            fresco:placeholderImage="@mipmap/ic_launcher"
+            fresco:placeholderImageScaleType="center"/>
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3sp"
+            android:gravity="center"
+            android:paddingTop="3sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Asian-Fashion-Long-Sleeve-Mandarin-Collar-Mens-Shirts-Male-Casual-Linen-Shirt"
+            android:textColor="@color/clrBtnPink"
+            android:textSize="16sp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/llItemPriceDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/clrBtnPink">
+
+            <TextView
+                android:id="@+id/tvItemOldPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:paddingTop="5sp"
+                android:text="Rs. 15,000/-"
+                android:textColor="@color/clrWhite"
+                android:textSize="12sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/tvItemNewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:paddingTop="5sp"
+                android:layout_toRightOf="@+id/tvItemOldPrice"
+                android:text="Rs. 7,000/-"
+                android:textColor="@color/clrWhite"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvItemDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:paddingTop="5sp"
+                android:layout_toRightOf="@+id/tvItemNewPrice"
+                android:text="30%"
+                android:textColor="@color/clrWhite"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

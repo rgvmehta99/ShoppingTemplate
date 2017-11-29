@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvExtraInfotitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/clrBtnPink"
+            android:layout_toLeftOf="@+id/ivDropDownIcon"
+            android:elevation="6dp"
+            android:gravity="left"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:text="Tap to toggle expansion" />
+        <!--android:foreground="?selectableItemBackground"
+        android:background="?android:windowBackground"
+        style="@style/TextAppearance.AppCompat.Medium"-->
+
+
+        <ImageView
+            android:id="@+id/ivDropDownIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_arrow_down"/>
+    </RelativeLayout>
+
+
+    <com.util.expandable_layout.ExpandableLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="1000"
+        app:el_expanded="false">
+
+        <TextView
+            android:id="@+id/tvExtraInfoDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:elevation="4dp"
+            android:gravity="left"
+            android:paddingTop="3sp"
+            android:paddingBottom="3sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:text="Fixed height"
+            android:textColor="@color/clrDarkGrayLine" />
+        <!--android:background="#00b300"-->
+
+    </com.util.expandable_layout.ExpandableLayout>
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/clrWhite"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llPaymentShippingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card_view:cardCornerRadius="7sp"
+                    card_view:cardElevation="7sp"
+                    card_view:cardUseCompatPadding="true">
+                    <!--android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvTagPaymentOption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/tvBATagChooesAddress"
+                                android:padding="10sp"
+                                android:text="Payment Option"
+                                android:textColor="@color/clrBtnPink"
+                                android:textSize="17sp"/>
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/llBAAddressContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/clrBtnPink"/>
+
+                            <RadioGroup
+                                android:id="@+id/rgGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10sp">
+
+                                <RadioButton
+                                    android:id="@+id/rbCOD"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:buttonTint="@color/clrBtnPink"
+                                    android:checked="true"
+                                    android:text="COD"
+                                    android:textColor="@color/clrDarkGray"
+                                    android:textSize="16sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/rbPayuMoney"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:buttonTint="@color/clrBtnPink"
+                                    android:checked="false"
+                                    android:text="PayUMoney"
+                                    android:textColor="@color/clrDarkGray"
+                                    android:textSize="16sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/rbPayPal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:buttonTint="@color/clrBtnPink"
+                                    android:checked="false"
+                                    android:text="PayPal"
+                                    android:textColor="@color/clrDarkGray"
+                                    android:textSize="16sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/rbStripe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:buttonTint="@color/clrBtnPink"
+                                    android:checked="false"
+                                    android:text="Stripe"
+                                    android:textColor="@color/clrDarkGray"
+                                    android:textSize="16sp"/>
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/dummyView"
+                        android:layout_width="0sp"
+                        android:layout_height="0sp"
+                        android:layout_centerInParent="true"/>
+
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toLeftOf="@+id/dummyView"
+                        card_view:cardCornerRadius="27sp"
+                        card_view:cardElevation="7sp"
+                        card_view:cardUseCompatPadding="true">
+                        <!--android:layout_marginBottom="10sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"-->
+
+                        <TextView
+                            android:id="@+id/tvPrevious"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/pink_btn_ripple"
+                            android:gravity="center"
+                            android:padding="11sp"
+                            android:text="Previous"
+                            android:textColor="@color/clrWhite"
+                            android:textSize="15sp"/>
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/dummyView"
+                        card_view:cardCornerRadius="27sp"
+                        card_view:cardElevation="7sp"
+                        card_view:cardUseCompatPadding="true">
+                        <!--android:layout_marginBottom="10sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"-->
+
+                        <TextView
+                            android:id="@+id/tvProceed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/pink_btn_ripple"
+                            android:gravity="center"
+                            android:padding="11sp"
+                            android:text="Proceed"
+                            android:textColor="@color/clrWhite"
+                            android:textSize="15sp"/>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

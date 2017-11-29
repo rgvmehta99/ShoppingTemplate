@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llSubMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/white_btn_ripple"
+                android:layout_toLeftOf="@+id/llRightArrow">
+
+                <TextView
+                    android:id="@+id/tvOrderItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3sp"
+                    android:paddingTop="3sp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Orpat Iron Press Machine OP-556 1000 wt kgi2ueg ciegc gceyg ygceygygceyi cgygcb ycgycgycgygy"
+                    android:textColor="@color/clrBtnPink"
+                    android:textSize="17sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tvOrderItemName">
+
+                    <TextView
+                        android:id="@+id/tvTagOrderStatusMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order status :"
+                        android:textColor="@color/clrDarkGrayLine"
+                        android:textSize="11sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/rlStatusMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivOrderStatusMain"
+                            android:layout_width="9sp"
+                            android:layout_height="9sp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/pink_btn_round_rect"/>
+
+                        <TextView
+                            android:id="@+id/tvOrderStatusMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5sp"
+                            android:text="Delivered"
+                            android:textColor="@color/clrDarkGray"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llRightArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/white_btn_ripple"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:padding="5sp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivDropDownIcon"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:padding="5sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_down"/>
+
+            <TextView
+                android:id="@+id/tvTagOrderDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_toLeftOf="@+id/ivDropDownIcon"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:text="Order details"
+                android:textColor="@color/clrDarkGray"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <com.util.expandable_layout.ExpandableLayout
+            android:id="@+id/expandableLayout"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="1000"
+            app:el_expanded="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/ivPrProductImg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPrTagOrderNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="Order no :"
+                        android:textColor="@color/clrDarkGrayLine"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvPrOrderNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="3sp"
+                        android:paddingTop="3sp"
+                        android:text="SHP000789566-LP"
+                        android:textColor="@color/clrBtnPink"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/tvPrTagItemName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="Item name :"
+                        android:textColor="@color/clrDarkGrayLine"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvPrItemName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="3sp"
+                        android:paddingTop="3sp"
+                        android:text="LG-LD9874-28'LED TV "
+                        android:textColor="@color/clrBtnPink"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/tvPrTagPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="Price :"
+                        android:textColor="@color/clrDarkGrayLine"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvPrPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="3sp"
+                        android:paddingTop="3sp"
+                        android:text="28,789.00/-"
+                        android:textColor="@color/clrBtnPink"
+                        android:textSize="13sp"/>
+
+                    <!--tvPrTagOrderShipTo-->
+                    <TextView
+                        android:id="@+id/tvPrTagOrderShipTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="Order ship to :"
+                        android:textColor="@color/clrDarkGrayLine"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvPrOrderShipTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="3sp"
+                        android:paddingTop="3sp"
+                        android:text="Delivered"
+                        android:textColor="@color/clrBtnPink"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/ivPrProductImg"
+                    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="140sp"
+                    android:layout_height="140sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5sp"
+                    fresco:actualImageScaleType="fitXY"
+                    fresco:actualImageUri=""
+                    fresco:fadeDuration="300"
+                    fresco:placeholderImage="@mipmap/ic_launcher"
+                    fresco:placeholderImageScaleType="center"/>
+
+            </RelativeLayout>
+            <!--android:background="#00b300"-->
+
+        </com.util.expandable_layout.ExpandableLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:background="@color/clrBtnPink"/>
+
+</LinearLayout>

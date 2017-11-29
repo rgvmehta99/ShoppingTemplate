@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shareInterpolator="true">
+	<translate android:fromXDelta="0%"
+    	android:toXDelta="-50%" android:fromYDelta="0%"
+    	android:toYDelta="0%" android:duration="300">
+	</translate>
+	
+	
+	<!-- for the previous activity close alpha black -->
+	<alpha android:duration="270"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.8"/>
+</set>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="status_bar_random_1">#F44336</color>
+    <color name="status_bar_random_2">#EB3573</color>
+    <color name="status_bar_random_22">#E91E63</color><!--previous color of btn-->
+    <color name="status_bar_random_3">#9C27B0</color>
+    <color name="status_bar_random_4">#673AB7</color>
+    <color name="status_bar_random_5">#3F51B5</color>
+    <color name="status_bar_random_6">#2196F3</color>
+    <color name="status_bar_random_7">#009688</color>
+    <color name="status_bar_random_8">#4CAF50</color>
+    <color name="status_bar_random_9">#8BC34A</color>
+    <color name="status_bar_random_10">#CDDC39</color>
+    <color name="status_bar_random_11">#FFEB3B</color>
+    <color name="status_bar_random_12">#FFC107</color>
+    <color name="status_bar_random_13">#FF9800</color>
+    <color name="status_bar_random_14">#FF5722</color>
+    <color name="status_bar_random_15">#795548</color>
+    <color name="status_bar_random_16">#9E9E9E</color>
+    <color name="status_bar_random_17">#607D8B</color>
+
+
+
+    <color name="clrMainBg">#484C66</color>
+    <color name="clrWhite">#FFFFFF</color>
+    <color name="clrBlack">#000000</color>
+    <color name="clrGrayLight">#c4c4c4</color>
+    <color name="clrBgPink">#4DEB3573</color>
+    <color name="clrBgPink2">#4D673AB7</color>
+
+
+    <color name="clrStatusbar">#D81558</color>
+    <color name="clrBtnPink">#EB3573</color>
+    <color name="clrBtnPinkDark">#aa1145</color>
+    <color name="BTNPressState">#aa1145</color>
+    <color name="BTNFocusState">#EB3573</color>
+
+    <color name="clrDemoLightTransparent">#16000000</color>
+    <color name="clrDemoDarkTransparent">#24000000</color>
+    <color name="clrShimmerColor">#e3e1e3</color>
+
+    <color name="clrDarkWhite">#EEEEEE</color>
+    <color name="clrTrWhite">#B3FFFFFF</color>
+    <color name="clrTrPink">#8CEB3573</color>
+    <color name="clrTrPinkDark">#8Caa1145</color>
+
+    <color name="clrGray">#AAAAAA</color>
+    <color name="clrDarkGray">#666666</color>
+
+    <color name="clrDarkGrayLine">#666666</color>
+
+
+
+
+    <!--for the detail screen-->
+    <color name="clr_d_title">#333333</color>
+    <color name="clr_d_detail">#80000000</color>
+    <color name="clr_d_detail_wht">#95FFFFFF</color>
+    <color name="clr_d_time">#999999</color>
+
+    <color name="clr_menu_unpress">#111111</color>
+    <color name="clr_menu_press">#000000</color>
+
+    <color name="clrRoundBtnUnpress">#ffffff</color>
+    <color name="clrRoundBtnPress">#111111</color>
+
+    <color name="clrBtnGreenBgUnpress">#00A300</color>
+    <color name="clrBtnGreenBgPress">#00CC00</color>
+
+    <color name="clrBtnWhiteUnpress">#FFFFFF</color>
+    <color name="clrBtnWhitePress">#AAFFFFFF</color>
+
+
+
+    <color name="clrBtnBgUnpress">#777777</color>
+    <color name="clrBtnBgPress">#ffffff</color>
+
+
+    <color name="clrFBBlue">#3B5998</color>
+    <color name="clrGooglePlus">#D34836</color>
+
+
+
+
+    <color name="clrTVBtnUnpress">#79000000</color>
+    <color name="clrTvBtnPress">#dddddd</color>
+
+
+    <!--halacab colors-->
+
+    <!--for the v-21 status color 07c4b5-->
+    <color name="clrStatusbar1">@color/clrDarkYellow</color>
+    <color name="clrScrollList">@color/clrYellow</color>
+
+
+    <color name="HMprimaryPressed">#AD9400</color> <!-- @color/green_bg  07c5bc-->
+    <color name="HMprimaryFocused">#FFDB00</color>
+    <color name="HMprimary">#FFDB00</color><!-- 00FFFFFF -->
+
+
+    <color name="primaryPressed">#AD9400</color>
+    <color name="primaryFocused">#AD9400</color>
+    <color name="primary">#FFDB00</color><!-- 00FFFFFF -->
+
+
+
+    <color name="black">#000000</color>
+    <color name="trBlack10">#1A000000</color>
+    <color name="trBlack40">#66000000</color>
+    <color name="trBlack80">#88000000</color>
+    <color name="clrRed">#cc0000</color>
+    <color name="clrGreen">#006600</color>
+
+    <color name="clr_list_bg">#FFFFFF</color>
+
+
+
+    <color name="trYellow">#80FFDB00</color>
+    <color name="clrYellow">#FFDB00</color>
+    <color name="clrDarkYellow">#AD9400</color>
+
+
+    <color name="clrFullTr">#00FFFFFF</color>
+    <color name="clrLineYellow">#FFDB00</color>
+
+
+    <color name="clrTimeRawBookig">#AAAAAA</color>
+    <color name="clrBGRawBookig">#111111</color>
+
+    <color name="clrUserImageShadow">#111111</color>
+    <color name="clrFacebook">#3b5998</color>
+    <color name="clrGPlus">#DE5347</color>
+    <color name="clrTwitter">#1DA1F2</color>
+
+
+    <!-- alpha colors
+
+        100% — FF
+        95% — F2
+        90% — E6
+        85% — D9
+        80% — CC
+        75% — BF
+        70% — B3
+        65% — A6
+        60% — 99
+        55% — 8C
+        50% — 80
+        45% — 73
+        40% — 66
+        35% — 59
+        30% — 4D
+        25% — 40
+        20% — 33
+        15% — 26
+        10% — 1A
+        5% — 0D
+        0% — 00-->
+</resources>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="7sp"
+        card_view:cardElevation="7sp"
+        card_view:cardUseCompatPadding="true">
+        <!--android:layout_marginBottom="10sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="10sp"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="5sp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivProductImg"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="130sp"
+                android:layout_height="130sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                fresco:actualImageScaleType="fitXY"
+                fresco:actualImageUri=""
+                fresco:fadeDuration="300"
+                fresco:placeholderImage="@mipmap/ic_launcher"
+                fresco:placeholderImageScaleType="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@+id/ivProductImg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Addidas Shorts Man - AD5656 56565"
+                    android:textColor="@color/clrBtnPink"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/tvItemPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Rs. 25000.00"
+                    android:textColor="@color/clrDarkGrayLine"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--android:layout_marginTop="3sp"-->
+
+                    <TextView
+                        android:id="@+id/tvItemSize"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Size L"
+                        android:textColor="@color/clrDarkGray"
+                        android:textSize="15sp"/>
+
+                    <View
+                        android:layout_width="1sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:background="@color/clrBtnPinkDark"/>
+
+                    <TextView
+                        android:id="@+id/tvItemQty"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Qty 1"
+                        android:textColor="@color/clrDarkGray"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTagEdit"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_ripple"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingBottom="4sp"
+                        android:paddingTop="4sp"
+                        android:text="Edit"
+                        android:textColor="@color/clrBtnPink"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+
+                <com.util.expandable_layout.ExpandableLayout
+                    android:id="@+id/expandableLayout"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    app:el_duration="650"
+                    app:el_expanded="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginTop="5sp"
+                            android:background="@color/clrBtnPink"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginTop="5sp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.4"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Size :"
+                                android:textColor="@color/clrDarkGray"
+                                android:textSize="14sp"/>
+
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                android:id="@+id/spinnerSize"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:ms_text_color="@color/clrBtnPink"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.4"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Qty :"
+                                android:textColor="@color/clrDarkGray"
+                                android:textSize="14sp"/>
+
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                android:id="@+id/spinnerQty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:ms_text_color="@color/clrBtnPink"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.util.expandable_layout.ExpandableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTagMoveToFavourites"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Move to Favourites"
+                        android:textColor="@color/status_bar_random_3"
+                        android:textSize="14sp"/>
+
+                    <View
+                        android:layout_width="1sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:background="@color/clrBtnPinkDark"/>
+
+                    <TextView
+                        android:id="@+id/tvTagRemove"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Remove"
+                        android:textColor="@color/status_bar_random_3"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

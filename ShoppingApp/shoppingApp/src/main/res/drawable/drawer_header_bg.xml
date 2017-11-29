@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+        <solid android:color="@color/clrBtnPink" />
+        </shape>
+
+        <!--<bitmap android:src="@drawable/banner1"-->
+                <!--android:gravity="center" android:alpha="0.5"/>-->
+    </item>
+
+    <item android:top="150dp"
+          android:bottom="-150dp"
+          android:left="0dp"
+          android:right="-200dp">
+        <rotate
+            android:fromDegrees="-31"
+            android:pivotX="20%"
+            android:pivotY="100%">
+            <shape
+                android:shape="rectangle">
+                <solid
+                    android:color="@color/clrWhite"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
+
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<item>-->
+        <!--<inset android:insetBottom="2dp" >-->
+            <!--<selector xmlns:android="http://schemas.android.com/apk/res/android" >-->
+                <!--<item android:state_pressed="true">-->
+                    <!--<shape android:shape="rectangle" >-->
+                        <!--<corners android:radius="10dip" />-->
+                        <!--<solid android:color="@color/clrBtnPink"/>-->
+                    <!--</shape>-->
+                <!--</item>-->
+                <!--<item android:state_focused="true">-->
+                    <!--<shape android:shape="rectangle" >-->
+                        <!--<corners android:radius="3dip" />-->
+
+                        <!--<stroke-->
+                            <!--android:width="1dp"-->
+                            <!--android:color="#5e7974" />-->
+                        <!--<solid android:color="@color/clrBtnPink"/>-->
+                    <!--</shape>-->
+                <!--</item>-->
+                <!--<item>-->
+                    <!--<shape android:shape="rectangle" >-->
+                        <!--<corners android:radius="1dp" />-->
+                        <!--<solid android:color="@color/clrBtnPink"/>-->
+                    <!--</shape>-->
+                <!--</item>-->
+            <!--</selector>-->
+        <!--</inset>-->
+    <!--</item>-->
+    <!--<item-->
+        <!--android:bottom="65dp"-->
+        <!--android:right="-129dp"-->
+        <!--android:top="-40dp">-->
+        <!--<rotate android:fromDegrees="50" >-->
+            <!--<shape android:shape="rectangle" >-->
+                <!--<solid android:color="@color/clrTrWhite" />-->
+            <!--</shape>-->
+        <!--</rotate>-->
+    <!--</item>-->
+    <!--<item-->
+        <!--android:bottom="-40dp"-->
+        <!--android:right="-129dp"-->
+        <!--android:top="65dp">-->
+        <!--<rotate android:fromDegrees="-50" >-->
+            <!--<shape android:shape="rectangle" >-->
+                <!--<solid android:color="@color/clrTrWhite" />-->
+            <!--</shape>-->
+        <!--</rotate>-->
+    <!--</item>-->
+<!--</layer-list>-->
+
+
+<!--<rotate-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:fromDegrees="35"-->
+    <!--android:pivotX="-20%"-->
+    <!--android:pivotY="0%">-->
+    <!--<shape>-->
+        <!--<solid android:color="@color/clrBtnPink" />-->
+        <!--&lt;!&ndash;<size&ndash;&gt;-->
+            <!--&lt;!&ndash;android:width="720dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:height="200dp" />&ndash;&gt;-->
+    <!--</shape>-->
+<!--</rotate>-->

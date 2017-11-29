@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/pink_btn_round_rect_border">
+
+        <TextView
+            android:id="@+id/tvProductSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXL"
+            android:textSize="15sp"
+            android:textColor="@color/clrBtnPink"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

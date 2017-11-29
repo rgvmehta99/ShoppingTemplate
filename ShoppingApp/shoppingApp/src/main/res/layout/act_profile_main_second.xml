@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rlMainParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlBanner"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/ivBanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/one"
+            android:tint="#70000000"/>
+
+        <ImageView
+            android:id="@+id/ivBackSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_btn_ripple"
+            android:src="@drawable/ic_back"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/shadowView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlBanner"
+        android:layout_height="4dp"
+        android:background="@drawable/elevation_bg"/>
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_btn_ripple"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:gravity="center"
+        android:layout_marginBottom="5sp"
+        android:text="Jenny Methew"
+        android:layout_above="@+id/ivProfileImage"
+        android:textColor="@color/clrWhite"
+        android:textSize="@dimen/text_22s"/>
+
+    <com.util.CircularImageView
+        android:id="@+id/ivProfileImage"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_above="@+id/shadowView"
+        android:layout_marginBottom="-50sp"
+        android:background="@drawable/img_user_shadow"
+        android:src="@drawable/dummy_user_model"
+        android:elevation="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_below="@+id/shadowView"
+        android:paddingTop="45sp"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:paddingBottom="0sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.util.custom_gridview.GridRecyclerView
+            android:id="@+id/gridRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:stretchMode="columnWidth"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

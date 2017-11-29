@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.util.MaterialProgressBar
+        android:id="@+id/mterialProgress"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="4sp"
+        android:indeterminate="true"
+        android:visibility="visible"
+        app:backgroundColour="@color/clrTrPinkDark"
+        app:duration="2000"
+        app:progressColour="@color/clrBtnPinkDark"/>
+
+
+    <RelativeLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-3sp"
+            android:layout_marginTop="-3sp"
+            android:visibility="visible"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAdd"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20sp"
+            android:layout_marginRight="25sp"
+            app:backgroundTint="@color/clrBtnPink"
+            android:src="@drawable/ic_add"
+            android:tint="@color/clrWhite"
+            app:elevation="9sp"
+            app:rippleColor="@color/clrBtnPinkDark"/>
+
+    </RelativeLayout>
+
+
+    <!--
+        No Data Layout
+    -->
+    <RelativeLayout
+        android:id="@+id/rlNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_cart"
+            android:tint="@color/clrBtnPink"/>
+
+        <TextView
+            android:id="@+id/tvNoData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivNoData"
+            android:gravity="center"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:text="@string/strNetError"
+            android:textColor="@color/clrBtnPink"
+            android:textSize="@dimen/text_16s"/>
+    </RelativeLayout>
+
+</RelativeLayout>

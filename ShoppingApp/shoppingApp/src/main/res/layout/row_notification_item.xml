@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="7sp"
+            card_view:cardElevation="9sp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:id="@+id/tvInfoDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3sp"
+                    android:paddingTop="3sp"
+                    android:text="05th Oct ,2017 03:50 pm"
+                    android:textColor="@color/clrGray"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tvInfoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3sp"
+                    android:paddingTop="3sp"
+                    android:text="Did you know, We have reached 1 billion Happy Customer"
+                    android:textColor="@color/clrBtnPink"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvInfoDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3sp"
+                    android:paddingTop="3sp"
+                    android:text="Customer satisfaction shold be main goal for every owner. Here we go. We have reached accross 1 billions Happy Customers."
+                    android:textColor="@color/clrDarkGrayLine"
+                    android:textSize="13sp"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/ivInfoImage"
+                    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="130sp"
+                    android:layout_gravity="center"
+                    fresco:actualImageScaleType="fitXY"
+                    fresco:fadeDuration="300"
+                    fresco:placeholderImage="@mipmap/ic_launcher"
+                    fresco:placeholderImageScaleType="center"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llPersonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_viewPersonal"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="7sp"
+            card_view:cardElevation="9sp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:id="@+id/tvPrDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3sp"
+                    android:paddingTop="3sp"
+                    android:text="05th Oct ,2017 03:50 pm"
+                    android:textColor="@color/clrGray"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tvPrTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3sp"
+                    android:paddingTop="3sp"
+                    android:text="Your order of LG-LD9874-28'LED TV has been placed"
+                    android:textColor="@color/clrBtnPink"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginBottom="3sp"
+                    android:layout_marginTop="3sp"
+                    android:background="@color/clrBtnPink"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/ivPrProductImg"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvPrTagItemName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:text="Item name :"
+                            android:textColor="@color/clrDarkGrayLine"
+                            android:textSize="11sp"/>
+
+                        <TextView
+                            android:id="@+id/tvPrItemName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="3sp"
+                            android:paddingTop="3sp"
+                            android:text="LG-LD9874-28'LED TV "
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:id="@+id/tvPrTagPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:text="Price :"
+                            android:textColor="@color/clrDarkGrayLine"
+                            android:textSize="11sp"/>
+
+                        <TextView
+                            android:id="@+id/tvPrPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="3sp"
+                            android:paddingTop="3sp"
+                            android:text="28,789.00/-"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:id="@+id/tvPrTagEstimateDt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:text="Estimate delievery date :"
+                            android:textColor="@color/clrDarkGrayLine"
+                            android:textSize="11sp"/>
+
+                        <TextView
+                            android:id="@+id/tvPrEstimateDt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="3sp"
+                            android:paddingTop="3sp"
+                            android:text="15th Oct ,2017 12:15 pm"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/ivPrProductImg"
+                        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="130sp"
+                        android:layout_height="130sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5sp"
+                        fresco:actualImageScaleType="fitXY"
+                        fresco:actualImageUri=""
+                        fresco:fadeDuration="300"
+                        fresco:placeholderImage="@mipmap/ic_launcher"
+                        fresco:placeholderImageScaleType="center"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/llHeaderViewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="210sp">-->
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/viewPager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:clipToPadding="false"-->
+            <!--android:visibility="visible"-->
+            <!--android:background="@color/clrTrPink" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--
+        Layout for TYPE - 1 - New Arrivals
+    -->
+    <LinearLayout
+        android:id="@+id/llMainTypeOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="20sp"
+        android:paddingBottom="15sp"
+        android:background="@drawable/gradiant_three">
+
+        <RelativeLayout
+            android:id="@+id/rlHeaderOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNewArrivalsTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/rlViewAllTagOne"
+                android:maxLines="1"
+                android:paddingBottom="10sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="10sp"
+                android:paddingTop="10sp"
+                android:text="New Arrivals"
+                android:textColor="@color/clrBtnPinkDark"
+                android:textSize="@dimen/text_20s"/>
+
+            <TextView
+                android:id="@+id/rlViewAllTagOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pink_btn_round_rect"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="5sp"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="5sp"
+                android:text="View All"
+                android:textColor="@color/clrWhite"
+                android:textSize="@dimen/text_12s"/>
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardViewNewNewArrivals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="9sp"
+            card_view:cardElevation="9sp"
+            android:layout_below="@+id/rlHeaderOne">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20sp"
+                android:paddingTop="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:orientation="vertical">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/ivNewArrivalsProductImgOne"
+                            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="150sp"
+                            android:layout_centerVertical="true"
+                            fresco:fadeDuration="300"
+                            fresco:actualImageScaleType="centerInside"
+                            fresco:placeholderImage="@mipmap/ic_launcher"
+                            fresco:placeholderImageScaleType="center"/>
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/ivNewArrivalsProductImgOne"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="150sp"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:src="@drawable/one"/>-->
+
+                        <TextView
+                            android:id="@+id/tvNewArrivalsProductNameOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="New Arrivals"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_16s"/>
+
+                        <TextView
+                            android:id="@+id/tvNewArrivalsProductPriceOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Rs. 1500/-"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_12s"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:orientation="vertical">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/ivNewArrivalsProductImgTwo"
+                            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="150sp"
+                            android:layout_centerVertical="true"
+                            fresco:fadeDuration="300"
+                            fresco:actualImageScaleType="centerInside"
+                            fresco:placeholderImage="@mipmap/ic_launcher"
+                            fresco:placeholderImageScaleType="center"/>
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/ivNewArrivalsProductImgTwo"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="150sp"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:src="@drawable/one"/>-->
+
+                        <TextView
+                            android:id="@+id/tvNewArrivalsProductNameTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="New Arrivals"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_16s"/>
+
+                        <TextView
+                            android:id="@+id/tvNewArrivalsProductPriceTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Rs. 1500/-"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_12s"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/ivNewArrivalsProductImgThree"
+                            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="150sp"
+                            android:layout_centerVertical="true"
+                            fresco:fadeDuration="300"
+                            fresco:actualImageScaleType="centerInside"
+                            fresco:placeholderImage="@mipmap/ic_launcher"
+                            fresco:placeholderImageScaleType="center"/>
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/ivNewArrivalsProductImgThree"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="150sp"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:src="@drawable/one"/>-->
+
+                        <TextView
+                            android:id="@+id/tvNewArrivalsProductNameThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="New Arrivals"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_16s"/>
+
+                        <TextView
+                            android:id="@+id/tvNewArrivalsProductPriceThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Rs. 1500/-"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_12s"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:orientation="vertical">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/ivNewArrivalsProductImgFour"
+                            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="150sp"
+                            android:layout_centerVertical="true"
+                            fresco:fadeDuration="300"
+                            fresco:actualImageScaleType="centerInside"
+                            fresco:placeholderImage="@mipmap/ic_launcher"
+                            fresco:placeholderImageScaleType="centerInside"/>
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/ivNewArrivalsProductImgFour"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="150sp"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:src="@drawable/one"/>-->
+
+                        <TextView
+                            android:id="@+id/tvNewArrivalsProductNameFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="New Arrivals"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_16s"/>
+
+                        <TextView
+                            android:id="@+id/tvNewArrivalsProductPriceFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Rs. 1500/-"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_12s"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <!--
+        Layout for TYPE - 2 - Add Banner
+    -->
+    <LinearLayout
+        android:id="@+id/llMainTypeTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ivAddBannerImage"
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="210sp"
+            fresco:fadeDuration="300"
+            fresco:actualImageScaleType="fitXY"
+            fresco:placeholderImage="@mipmap/ic_launcher"
+            fresco:placeholderImageScaleType="center"/>
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/ivAddBannerImage"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="210dp"-->
+            <!--android:src="@drawable/banner1"/>-->
+    </LinearLayout>
+
+
+
+    <!--
+        Layout for TYPE - 3 - Discount Items
+    -->
+    <LinearLayout
+        android:id="@+id/llMainTypeThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:background="@drawable/gradiant_one"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tvDiscountTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivDiscountTagCircularImage"
+                android:maxLines="2"
+                android:paddingBottom="10sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="10sp"
+                android:paddingTop="10sp"
+                android:text="Discount Items"
+                android:textColor="@color/clrBtnPinkDark"
+                android:textSize="@dimen/text_20s"/>
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivDiscountTagCircularImage"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                fresco:fadeDuration="300"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10sp"
+                fresco:actualImageScaleType="fitXY"
+                fresco:roundAsCircle="true"
+                fresco:placeholderImage="@mipmap/ic_launcher"
+                fresco:placeholderImageScaleType="center"/>
+
+            <!--<com.util.CircularImageView-->
+                <!--android:id="@+id/ivDiscountTagCircularImage"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_marginRight="10sp"-->
+                <!--android:src="@drawable/banner1"-->
+                <!--android:layout_alignParentRight="true"/>-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <!--
+        Layout for TYPE - 4 - Last Related Search
+    -->
+    <LinearLayout
+        android:id="@+id/llMainTypeFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20sp"
+        android:paddingBottom="15sp"
+        android:background="@drawable/gradiant_two">
+
+        <RelativeLayout
+            android:id="@+id/rlHeaderFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.util.CircularImageView
+                android:id="@+id/ivLastRelatedSearchTagCircularImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/banner1"
+                android:background="@drawable/img_user_shadow"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvLastRelatedSearchTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivLastRelatedSearchTagCircularImage"
+                android:layout_toLeftOf="@+id/rlViewAllTagFour"
+                android:maxLines="1"
+                android:paddingBottom="10sp"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="10sp"
+                android:text="Last Related Search"
+                android:textColor="@color/clrBtnPinkDark"
+                android:textSize="@dimen/text_20s"/>
+
+            <TextView
+                android:id="@+id/rlViewAllTagFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pink_btn_round_rect"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="5sp"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="5sp"
+                android:text="View All"
+                android:textColor="@color/clrWhite"
+                android:textSize="@dimen/text_12s"/>
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="5dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@drawable/elevation_bg"/>-->
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardViewLastRelated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="9sp"
+            card_view:cardElevation="9sp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/ivLastRelatedSearchProductImgOne"
+                        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="245sp"
+                        android:layout_centerVertical="true"
+                        fresco:fadeDuration="300"
+                        fresco:actualImageScaleType="fitCenter"
+                        fresco:placeholderImage="@mipmap/ic_launcher"
+                        fresco:placeholderImageScaleType="center"/>
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/ivLastRelatedSearchProductImgOne"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="245sp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:src="@drawable/one"/>-->
+
+                    <TextView
+                        android:id="@+id/tvLastRelatedSearchProductNameOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="New Arrivals"
+                        android:textColor="@color/clrBtnPink"
+                        android:textSize="@dimen/text_16s"/>
+
+                    <TextView
+                        android:id="@+id/tvLastRelatedSearchProductPriceOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Rs. 1500/-"
+                        android:textColor="@color/clrBtnPink"
+                        android:textSize="@dimen/text_12s"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/clrBtnPink"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10sp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/ivLastRelatedSearchProductImgTwo"
+                            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="90sp"
+                            android:layout_centerVertical="true"
+                            fresco:fadeDuration="300"
+                            fresco:actualImageScaleType="fitXY"
+                            fresco:placeholderImage="@mipmap/ic_launcher"
+                            fresco:placeholderImageScaleType="center"/>
+
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/ivLastRelatedSearchProductImgTwo"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="90dp"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:src="@drawable/one"/>-->
+
+                        <TextView
+                            android:id="@+id/tvLastRelatedSearchProductNameTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="New Arrivals"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_16s"/>
+
+                        <TextView
+                            android:id="@+id/tvLastRelatedSearchProductPriceTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Rs. 1500/-"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_12s"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/clrBtnPink"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10sp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/ivLastRelatedSearchProductImgThree"
+                            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="90sp"
+                            android:layout_centerVertical="true"
+                            fresco:fadeDuration="300"
+                            fresco:actualImageScaleType="fitXY"
+                            fresco:placeholderImage="@mipmap/ic_launcher"
+                            fresco:placeholderImageScaleType="center"/>
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/ivLastRelatedSearchProductImgThree"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="90sp"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:src="@drawable/one"/>-->
+
+                        <TextView
+                            android:id="@+id/tvLastRelatedSearchProductNameThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="New Arrivals"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_16s"/>
+
+                        <TextView
+                            android:id="@+id/tvLastRelatedSearchProductPriceThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Rs. 1500/-"
+                            android:textColor="@color/clrBtnPink"
+                            android:textSize="@dimen/text_12s"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

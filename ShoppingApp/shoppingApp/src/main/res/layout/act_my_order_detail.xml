@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.util.MaterialProgressBar
+        android:id="@+id/mterialProgress"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="4sp"
+        android:indeterminate="true"
+        android:visibility="visible"
+        app:backgroundColour="@color/clrTrPinkDark"
+        app:duration="2000"
+        app:progressColour="@color/clrBtnPinkDark"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/rlBottom">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvOrderNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tvCartItems"
+                    android:padding="15sp"
+                    android:text="Order No. SQL-20336981"
+                    android:textColor="@color/clrBtnPink"
+                    android:textSize="19sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@color/clrBtnPink"/>
+
+
+                <!--
+                    Cart Items recycler view
+                -->
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card_view:cardCornerRadius="7sp"
+                    card_view:cardElevation="7sp"
+                    card_view:cardUseCompatPadding="true">
+                    <!--android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvTagCartItems"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/tvCartItems"
+                                android:padding="10sp"
+                                android:text="Order Items"
+                                android:textColor="@color/clrBtnPink"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:id="@+id/tvCartItems"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/white_btn_ripple"
+                                android:padding="10sp"
+                                android:text="(5 Items)"
+                                android:textColor="@color/clrDarkGray"
+                                android:textSize="13sp"/>
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:layout_marginBottom="10sp"
+                                android:background="@color/clrBtnPink"/>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!--
+                    Pricing and Amount Card
+                -->
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card_view:cardCornerRadius="7sp"
+                    card_view:cardElevation="7sp"
+                    card_view:cardUseCompatPadding="true">
+                    <!--android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvTagPricingAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="Pricing &amp; Amount"
+                                android:textColor="@color/clrBtnPink"
+                                android:textSize="17sp"/>
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/clrBtnPink"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingBottom="10sp"
+                                android:paddingLeft="5sp"
+                                android:paddingRight="5sp"
+                                android:paddingTop="10sp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10sp"
+                                    android:paddingRight="10sp">
+
+                                    <TextView
+                                        android:id="@+id/tvTagTotal"
+                                        android:layout_width="0sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Total :"
+                                        android:textColor="@color/clrDarkGray"
+                                        android:textSize="15sp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvTotal"
+                                        android:layout_width="0sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:text="Rs. 25260.00"
+                                        android:textColor="@color/clrBtnPink"
+                                        android:textSize="15sp"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10sp"
+                                    android:paddingRight="10sp">
+
+                                    <TextView
+                                        android:id="@+id/tvTagGST"
+                                        android:layout_width="0sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="GST tax :"
+                                        android:textColor="@color/clrDarkGray"
+                                        android:textSize="15sp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvGST"
+                                        android:layout_width="0sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:text="Rs. 580.00"
+                                        android:textColor="@color/clrBtnPink"
+                                        android:textSize="15sp"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10sp"
+                                    android:paddingRight="10sp">
+
+                                    <TextView
+                                        android:id="@+id/tvTagShippingCharge"
+                                        android:layout_width="0sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Shipping charges :"
+                                        android:textColor="@color/clrDarkGray"
+                                        android:textSize="15sp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvShippingCharge"
+                                        android:layout_width="0sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:text="Rs. 90.00"
+                                        android:textColor="@color/clrBtnPink"
+                                        android:textSize="15sp"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10sp"
+                                    android:paddingRight="10sp">
+
+                                    <TextView
+                                        android:id="@+id/tvTagDiscount"
+                                        android:layout_width="0sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Discount :"
+                                        android:textColor="@color/clrDarkGray"
+                                        android:textSize="15sp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvDiscount"
+                                        android:layout_width="0sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:text="Rs. 230.00"
+                                        android:textColor="@color/clrBtnPink"
+                                        android:textSize="15sp"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5sp"
+                                    android:layout_marginBottom="5sp"
+                                    android:layout_marginTop="5sp"
+                                    android:background="@color/clrBtnPink"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10sp"
+                                    android:paddingRight="10sp">
+
+                                    <TextView
+                                        android:id="@+id/tvTagTotalPayableAmount"
+                                        android:layout_width="0sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:text="Total Payable Amount :"
+                                        android:textColor="@color/clrDarkGray"
+                                        android:textSize="16sp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvTotalPayableAmount"
+                                        android:layout_width="0sp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:text="Rs. 26000.00"
+                                        android:textColor="@color/clrBtnPink"
+                                        android:textSize="17sp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!--
+                    Billing Address info Card
+                -->
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card_view:cardCornerRadius="7sp"
+                    card_view:cardElevation="7sp"
+                    card_view:cardUseCompatPadding="true">
+                    <!--android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvTagBillingAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="Billing Address"
+                                android:textColor="@color/clrBtnPink"
+                                android:textSize="17sp"/>
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/llBAAddressContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="10sp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:layout_marginBottom="10sp"
+                                android:background="@color/clrBtnPink"/>
+
+                            <TextView
+                                android:id="@+id/tvBAUserName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp"
+                                android:text="Roxy Morphy"
+                                android:textColor="@color/clrBtnPink"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/tvBAAddressOne"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3sp"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp"
+                                android:text="SJ-102/A-85 Park Avenue"
+                                android:textColor="@color/clrDarkGray"
+                                android:textSize="15sp"/>
+
+                            <TextView
+                                android:id="@+id/tvBAAddressTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3sp"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp"
+                                android:text="St. George martin luther street, Nr. Twin Tower"
+                                android:textColor="@color/clrDarkGray"
+                                android:textSize="15sp"/>
+
+                            <TextView
+                                android:id="@+id/tvBAPincodeCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3sp"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp"
+                                android:text="LA-203365 Los Angeles"
+                                android:textColor="@color/clrDarkGray"
+                                android:textSize="15sp"/>
+
+                            <TextView
+                                android:id="@+id/tvBAStateCountry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3sp"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp"
+                                android:text="California, United States"
+                                android:textColor="@color/clrDarkGray"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!--
+                    Delivery Address info Card
+                -->
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card_view:cardCornerRadius="7sp"
+                    card_view:cardElevation="7sp"
+                    card_view:cardUseCompatPadding="true">
+                    <!--android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvTagDeleveryAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="Delivery Address"
+                                android:textColor="@color/clrBtnPink"
+                                android:textSize="17sp"/>
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/llDAAddressContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="10sp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:layout_marginBottom="10sp"
+                                android:background="@color/clrBtnPink"/>
+
+                            <TextView
+                                android:id="@+id/tvDAUserName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp"
+                                android:text="Jenny Methew"
+                                android:textColor="@color/clrBtnPink"
+                                android:textSize="16sp"/>
+
+                            <!--2300 Junipero Serra Blvd, Daly City, CA 94015, USA-->
+
+                            <TextView
+                                android:id="@+id/tvDAAddressOne"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3sp"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp"
+                                android:text="Lake Merced Golf Club"
+                                android:textColor="@color/clrDarkGray"
+                                android:textSize="15sp"/>
+
+                            <TextView
+                                android:id="@+id/tvDAAddressTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3sp"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp"
+                                android:text="2300 Junipero Serra Blvd, Daly City"
+                                android:textColor="@color/clrDarkGray"
+                                android:textSize="15sp"/>
+
+                            <TextView
+                                android:id="@+id/tvDAPincodeCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3sp"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp"
+                                android:text="CA 94015 Los Angeles"
+                                android:textColor="@color/clrDarkGray"
+                                android:textSize="15sp"/>
+
+                            <TextView
+                                android:id="@+id/tvDAStateCountry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3sp"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp"
+                                android:text="California, United States"
+                                android:textColor="@color/clrDarkGray"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!--
+                    Payment Option
+                -->
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card_view:cardCornerRadius="7sp"
+                    card_view:cardElevation="7sp"
+                    card_view:cardUseCompatPadding="true">
+                    <!--android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvTagPaymentOption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10sp"
+                                android:text="Payment &amp; Shipping Option"
+                                android:textColor="@color/clrBtnPink"
+                                android:textSize="17sp"/>
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="10sp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:layout_marginBottom="10sp"
+                                android:background="@color/clrBtnPink"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp">
+
+                                <TextView
+                                    android:id="@+id/tvTagShippedTo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Shipped To: "
+                                    android:textColor="@color/clrDarkGray"
+                                    android:textSize="17sp"/>
+
+                                <TextView
+                                    android:id="@+id/tvShippedTo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:text="Jenny Methew"
+                                    android:textColor="@color/clrBtnPink"
+                                    android:textSize="17sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp">
+
+                                <TextView
+                                    android:id="@+id/tvTagOrderStats"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Order Status: "
+                                    android:textColor="@color/clrDarkGray"
+                                    android:textSize="17sp"/>
+
+                                <ImageView
+                                    android:id="@+id/ivOrderStats"
+                                    android:layout_width="12sp"
+                                    android:layout_height="12sp"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/green_round"/>
+
+                                <TextView
+                                    android:id="@+id/tvOrderStats"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:text="Shipping - On the way"
+                                    android:textColor="@color/clrDarkGray"
+                                    android:textSize="15sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp">
+
+                                <TextView
+                                    android:id="@+id/tvTagPaymentType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Payment type: "
+                                    android:textColor="@color/clrDarkGray"
+                                    android:textSize="17sp"/>
+
+                                <TextView
+                                    android:id="@+id/tvPaymentType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:text="COD"
+                                    android:textColor="@color/clrBtnPink"
+                                    android:textSize="17sp"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp">
+
+                                <TextView
+                                    android:id="@+id/tvTagPaymentStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Status :"
+                                    android:textColor="@color/clrDarkGray"
+                                    android:textSize="16sp"/>
+
+                                <TextView
+                                    android:id="@+id/tvPaymentStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:text="DONE"
+                                    android:textColor="@color/clrGreen"
+                                    android:textSize="14sp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rlBottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/clrWhite">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvPlaceOrder"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/ivShare"-->
+            <!--android:text="Place Order"-->
+            <!--android:textSize="17sp"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/clrWhite"-->
+            <!--android:paddingTop="15sp"-->
+            <!--android:paddingBottom="15sp"-->
+            <!--android:background="@drawable/pink_btn_ripple_sqr"/>-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

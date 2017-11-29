@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/clr_menu_press" android:state_pressed="true"/>
+    <item android:drawable="@color/clr_menu_press" android:state_focused="true"/>
+    <item android:drawable="@color/clr_menu_unpress"/>
+</selector>
+
+<!-- <ripple xmlns:android="http://schemas.android.com/apk/res/android" 
+                      android:color="?android:colorControlHighlight">
+        <item android:id="@android:id/mask">
+            <shape android:shape="oval">
+                <solid android:color="?android:colorAccent" />
+            </shape>
+        </item>
+ </ripple> -->
